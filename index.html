@@ -45,6 +45,7 @@
     <nav class="nav" aria-label="Основная навигация">
       <a href="#features">Возможности</a>
       <a href="#compare">Сравнение</a>
+      <a href="#configs">Конфиги</a>
       <a href="#install">Установка</a>
       <a href="#free">Бесплатно</a>
       <a href="#faq">FAQ</a>
@@ -69,6 +70,7 @@
     <nav aria-label="Мобильная навигация">
       <a href="#features">Возможности</a>
       <a href="#compare">Сравнение</a>
+      <a href="#configs">Конфиги</a>
       <a href="#install">Установка</a>
       <a href="#free">Бесплатно</a>
       <a href="#faq">FAQ</a>
@@ -214,6 +216,69 @@
           <span class="compare__hint">Тяните ползунок или используйте стрелки</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="configs">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="pill"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4.5h8M6.2 4.5h.01M12 9.5v5m0 0 2.4-2.4M12 14.5 9.6 12.1M4.5 19.5h15"/></svg>Конфиги</span>
+        <h2 class="section__title">Готовые пресеты.<br><span>Один файл.</span></h2>
+        <p class="section__lead">Настройки визуала одним JSON: скачайте файл и закиньте его в папку конфигов лаунчера. Ниже — тестовый пресет, с него проще всего проверить, что всё работает.</p>
+      </div>
+
+      <div class="configs">
+        <article class="config-card reveal">
+          <div class="config-card__top">
+            <span class="config-card__badge">TEST</span>
+            <span class="config-card__ver" data-release-version="v">v1.5.2</span>
+          </div>
+
+          <h3 class="config-card__title">Тестовый конфиг</h3>
+          <p class="config-card__desc">Чистый день, мягкий свет, спокойная вода и немного пыльцы в воздухе. Проверочный пресет — убедиться, что лаунчер видит файлы конфигов.</p>
+
+          <ul class="config-card__tags" aria-label="Содержимое конфига">
+            <li>День</li>
+            <li>Вода</li>
+            <li>Пыльца</li>
+          </ul>
+
+          <div class="config-card__actions">
+            <a class="btn btn--fill btn--sm" href="assets/configs/test.json" download="reveal-test.json"
+               data-config-download data-config-name="Тестовый конфиг">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 17.5v1.2a1.8 1.8 0 0 0 1.8 1.8h11.4a1.8 1.8 0 0 0 1.8-1.8v-1.2"/></svg>
+              Скачать .json
+            </a>
+            <button class="btn btn--blur btn--sm" type="button"
+                    data-config-copy="assets/configs/test.json" data-config-name="Тестовый конфиг">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2.4"/><path d="M15.5 8.5v-2A2 2 0 0 0 13.5 4.5h-7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2"/></svg>
+              Копировать
+            </button>
+          </div>
+        </article>
+
+        <article class="config-card config-card--soon reveal">
+          <div class="config-card__top">
+            <span class="config-card__badge config-card__badge--soft">SOON</span>
+            <span class="config-card__ver">в работе</span>
+          </div>
+          <h3 class="config-card__title">Ночной пресет</h3>
+          <p class="config-card__desc">Звёзды, холодный туман и тяжёлая вода. Собирается вручную — появится здесь, как только пройдёт проверку на стабильность.</p>
+          <ul class="config-card__tags" aria-label="Планируемое содержимое">
+            <li>Ночь</li>
+            <li>Туман</li>
+            <li>Звёзды</li>
+          </ul>
+          <div class="config-card__actions">
+            <button class="btn btn--blur btn--sm" type="button" disabled>Скоро</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="configs__hint reveal">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.01"/></svg>
+        Файл кладётся в <code>%appdata%\.revealvisuals\configs</code>. Лаунчер подхватывает его при следующем запуске.
+      </p>
     </div>
   </section>
 
@@ -424,6 +489,7 @@
           <span class="footer__title">Визуал</span>
           <a href="#features">Возможности</a>
           <a href="#compare">Сравнение</a>
+          <a href="#configs">Конфиги</a>
           <a href="#install">Установка</a>
           <a href="#free">Бесплатно</a>
         </div>

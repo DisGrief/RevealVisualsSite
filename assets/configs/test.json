@@ -1,0 +1,39 @@
+{
+  "name": "Тестовый конфиг",
+  "id": "test",
+  "version": "1.5.2",
+  "author": "Reveal Team",
+  "description": "Проверочный пресет: чистый день, мягкий свет, спокойная вода и немного пыльцы в воздухе. Нужен, чтобы убедиться, что лаунчер видит файлы конфигов.",
+  "sky": {
+    "preset": "day",
+    "top": "#7fb6ff",
+    "bottom": "#e8f4ff",
+    "sun": { "size": 1.0, "glow": 0.35, "height": 0.62 }
+  },
+  "light": {
+    "intensity": 1.0,
+    "warmth": 0.15,
+    "shadows": true
+  },
+  "water": {
+    "enabled": true,
+    "waves": 0.6,
+    "reflection": 0.45,
+    "tint": "#4f9ad6"
+  },
+  "fog": {
+    "enabled": false,
+    "density": 0.12,
+    "color": "#cfe6ff"
+  },
+  "particles": {
+    "enabled": true,
+    "type": "pollen",
+    "count": 120,
+    "speed": 0.35
+  },
+  "stars": {
+    "enabled": false,
+    "density": 0.5
+  }
+}

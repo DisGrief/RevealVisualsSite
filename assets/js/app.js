@@ -388,6 +388,102 @@
     });
   }
 
+  /* --------------------------------------------------------------- configs */
+
+  var configTexts = {};
+
+  function legacyCopy(text) {
+    var area = document.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.top = '-1000px';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+
+    var copied = false;
+    try {
+      copied = document.execCommand('copy');
+    } catch (e) {
+      copied = false;
+    }
+
+    area.remove();
+    return copied;
+  }
+
+  function copyText(text) {
+    if (legacyCopy(text)) return Promise.resolve();
+
+    if (navigator.clipboard && window.isSecureContext) {
+      return Promise.race([
+        navigator.clipboard.writeText(text),
+        new Promise(function (resolve, reject) {
+          window.setTimeout(function () { reject(new Error('copy timeout')); }, 1500);
+        })
+      ]);
+    }
+
+    return Promise.reject(new Error('copy blocked'));
+  }
+
+  function prefetchConfig(url) {
+    if (configTexts[url]) return;
+
+    fetch(url, { cache: 'force-cache' })
+      .then(function (response) {
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        return response.text();
+      })
+      .then(function (text) { configTexts[url] = text; })
+      .catch(function () { /* retried on click */ });
+  }
+
+  $$('[data-config-copy]').forEach(function (button) {
+    var label = button.getAttribute('data-config-name') || 'Конфиг';
+    var url = button.getAttribute('data-config-copy');
+
+    prefetchConfig(url);
+
+    button.addEventListener('click', function () {
+      function done() {
+        button.classList.add('is-done');
+        toast('Скопировано', label + ' — JSON в буфере обмена.');
+        window.setTimeout(function () { button.classList.remove('is-done'); }, 1800);
+      }
+
+      function fail() {
+        toast('Не вышло скопировать', 'Скачайте файл кнопкой рядом.', 'error');
+      }
+
+      var cached = configTexts[url];
+
+      if (typeof cached === 'string') {
+        copyText(cached).then(done).catch(fail);
+        return;
+      }
+
+      fetch(url, { cache: 'no-cache' })
+        .then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.text();
+        })
+        .then(function (text) {
+          configTexts[url] = text;
+          return copyText(text);
+        })
+        .then(done)
+        .catch(fail);
+    });
+  });
+
+  $$('[data-config-download]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      toast('Конфиг скачивается', (link.getAttribute('data-config-name') || 'Конфиг') + ' · .json');
+    });
+  });
+
   /* ------------------------------------------------------------- misc links */
 
   $$('[data-toast]').forEach(function (link) {
