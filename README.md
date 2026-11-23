@@ -71,9 +71,11 @@ window.REVEAL_RELEASE = {
 
 ## Свой домен
 
-Сайт живёт на GitHub Pages, поэтому поддомен указывает на `disgrief.github.io`.
+Сайт живёт на GitHub Pages и открывается по адресу **https://revealvisuals.griefworlds.ru/**. В корне репозитория лежит `CNAME` с этим доменом, HTTPS включён принудительно.
 
-1. В DNS-панели домена `griefworlds.ru` (сейчас это Vercel → Domains → `griefworlds.ru` → DNS Records) добавьте запись:
+Если домен нужно переехать:
+
+1. В DNS-панели домена `griefworlds.ru` (сейчас это Vercel → Domains → `griefworlds.ru` → DNS Records) поставьте запись:
 
 ```
 Тип:   CNAME
@@ -95,7 +97,7 @@ gh api -X PUT repos/DisGrief/RevealVisualsSite/pages \
 gh api -X PUT repos/DisGrief/RevealVisualsSite/pages -F https_enforced=true
 ```
 
-Файл `CNAME` в корне репозитория делает то же самое — GitHub читает его при сборке.
+Файл `CNAME` в корне репозитория делает то же самое — GitHub читает его при сборке. После привязки домена старый адрес `disgrief.github.io/RevealVisualsSite/` отдаёт 301 на кастомный домен.
 
 ## Деплой
 
