@@ -484,6 +484,40 @@
     });
   });
 
+  /* -------------------------------------------------------------- lightbox */
+
+  var lightbox = $('#lightbox');
+  var lightboxImg = $('#lightboxImg');
+  var lightboxCaption = $('#lightboxCaption');
+  var lightboxClose = $('#lightboxClose');
+
+  if (lightbox && lightboxImg && typeof lightbox.showModal === 'function') {
+    $$('[data-shot]').forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        var img = link.querySelector('img');
+        event.preventDefault();
+        lightboxImg.src = link.getAttribute('href');
+        lightboxImg.alt = img ? img.alt : '';
+        if (lightboxCaption) lightboxCaption.textContent = link.getAttribute('data-shot-caption') || '';
+        lightbox.showModal();
+      });
+    });
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', function () {
+        if (lightbox.open) lightbox.close();
+      });
+    }
+
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox && lightbox.open) lightbox.close();
+    });
+
+    lightbox.addEventListener('close', function () {
+      lightboxImg.removeAttribute('src');
+    });
+  }
+
   /* ------------------------------------------------------------- misc links */
 
   $$('[data-toast]').forEach(function (link) {

@@ -1,0 +1,1501 @@
+{
+  "theme": {
+    "palette": 0,
+    "style": 0,
+    "scale": 1.0,
+    "animations": true,
+    "frontBackground": 4,
+    "accentA": "0",
+    "accentB": "0",
+    "studio": {
+      "custom": true,
+      "accent": "fff472b6",
+      "accent2": "fffbcfe8",
+      "panel": "ff1a1016",
+      "sidebar": "ff21141c",
+      "card": "ff24161f",
+      "field": "ff33212c",
+      "text": "fffff1f7",
+      "muted": "ffd2a6bc",
+      "opacity": 100.0
+    }
+  },
+  "modules": {
+    "hit_effects": {
+      "enabled": false,
+      "settings": {
+        "type": "Стекло",
+        "color_mode": "Свои",
+        "color": "fff43f5e",
+        "size": 1.0,
+        "crits_only": false,
+        "sound": true
+      }
+    },
+    "swing_trail": {
+      "enabled": true,
+      "settings": {
+        "color_mode": "Тема",
+        "color": "ff22d3ee",
+        "size": 1.0,
+        "life": 0.35,
+        "fp": false
+      }
+    },
+    "swing_animation": {
+      "enabled": true,
+      "settings": {
+        "mode": "Панч",
+        "strength": 15.0,
+        "main_only": true,
+        "smooth": 2.0
+      }
+    },
+    "damage_numbers": {
+      "enabled": true,
+      "settings": {
+        "style": "Число",
+        "size": 1.0,
+        "life": 1.2,
+        "self": false,
+        "color": "fff43f5e"
+      }
+    },
+    "kill_effects": {
+      "enabled": false,
+      "settings": {
+        "type": "Пепел",
+        "color_mode": "Свои",
+        "color": "ff22d3ee",
+        "size": 1.0,
+        "screen": true,
+        "shake": true,
+        "sound": true,
+        "volume": 0.7,
+        "players": false
+      }
+    },
+    "mace_fx": {
+      "enabled": false,
+      "settings": {
+        "style": "Кратер",
+        "players": true,
+        "monsters": true,
+        "animals": true,
+        "size": 1.0,
+        "by_height": true,
+        "palette": "Свои",
+        "screen": true,
+        "shake": true,
+        "sound": true,
+        "volume": 0.8
+      }
+    },
+    "projectile_hit": {
+      "enabled": false,
+      "settings": {
+        "эффект": "Пробой",
+        "цели.игроки": true,
+        "цели.монстры": false,
+        "цели.мирные": false,
+        "снаряды.стрелы": true,
+        "снаряды.броски": true,
+        "только_мои_снаряды": true,
+        "размер": 1.0,
+        "тряска_камеры": false,
+        "звук": true,
+        "громкость": 0.4,
+        "цвет_клиента": true,
+        "кастомный_цвет": "ff9eeded",
+        "цвет_крови": "ff7e0c0e"
+      }
+    },
+    "totem_fx": {
+      "enabled": false,
+      "settings": {
+        "style": "Феникс",
+        "self": true,
+        "players": true,
+        "mobs": false,
+        "palette": "Свои",
+        "size": 1.0,
+        "screen": true,
+        "shake": true,
+        "sound": true,
+        "volume": 0.7,
+        "hide_vanilla": true
+      }
+    },
+    "potion_fx": {
+      "enabled": false,
+      "settings": {
+        "palette": "Зелье",
+        "drink": true,
+        "throw": true,
+        "size": 1.0,
+        "screen": true,
+        "shake": true,
+        "sound": true,
+        "volume": 0.6
+      }
+    },
+    "target_marker": {
+      "enabled": false,
+      "settings": {
+        "style": "Дуги",
+        "size": 1.0,
+        "speed": 1.0,
+        "hurt_tint": true,
+        "color_mode": "Тема",
+        "color": "fff43f5e"
+      }
+    },
+    "outline": {
+      "enabled": false,
+      "settings": {
+        "style": "Чамсы",
+        "material": "Заливка",
+        "players": true,
+        "mobs": false,
+        "only_target": false,
+        "allies": true,
+        "colour": "Тема",
+        "color_a": "ffc084fc",
+        "color_b": "ff22d3ee",
+        "thickness": 3.0,
+        "opacity": 95.0,
+        "glow": true,
+        "flow": true,
+        "fill": false,
+        "fill_opacity": 22.0,
+        "hit_flash": true
+      }
+    },
+    "friends": {
+      "enabled": false,
+      "settings": {
+        "names": "",
+        "middle_click": true,
+        "highlight": true,
+        "color": "ff4ade80",
+        "no_target": true
+      }
+    },
+    "player_trail": {
+      "enabled": true,
+      "settings": {
+        "palette": "Градиент",
+        "color": "theme",
+        "duration": 400.0,
+        "height": 1.0,
+        "fill": true,
+        "fill_alpha": 0.5,
+        "lines": true,
+        "line_width": 2.0,
+        "first_person": false
+      }
+    },
+    "jump_circles": {
+      "enabled": true,
+      "settings": {
+        "style": "Неон",
+        "color_mode": "Градиент",
+        "color": "theme",
+        "radius": 1.2,
+        "life": 1.0,
+        "spin": true,
+        "landing": true,
+        "motes": true
+      }
+    },
+    "footprints": {
+      "enabled": false,
+      "settings": {
+        "color_mode": "Градиент",
+        "color": "theme",
+        "life": 3.0,
+        "size": 1.0
+      }
+    },
+    "armor_paint": {
+      "enabled": false,
+      "settings": {
+        "mode": "Переливание",
+        "color_a": "theme",
+        "color_b": "ff22d3ee",
+        "style": "Перекраска",
+        "speed": 1.0,
+        "shine": true,
+        "glow": false,
+        "others": false
+      }
+    },
+    "crosshair": {
+      "enabled": true,
+      "settings": {
+        "style": "Точка",
+        "color": "ff000000",
+        "size": 4.0,
+        "thickness": 2.0,
+        "gap": 3.0,
+        "outline": true,
+        "scale": "Авто",
+        "cooldown": "Полоса",
+        "advanced": false,
+        "opacity": 1.0,
+        "outline_opacity": 1.0,
+        "outline_thickness": 1.0,
+        "center_dot": false,
+        "outer_lines": false,
+        "outer_length": 2.0,
+        "outer_gap": 10.0,
+        "target": true,
+        "target_color": "ffff4040",
+        "third_person": false
+      }
+    },
+    "combohelper": {
+      "enabled": false,
+      "settings": {
+        "timing": true,
+        "sprint": true,
+        "reach": true,
+        "combo": true,
+        "size": 1.0
+      }
+    },
+    "hand_view": {
+      "enabled": false,
+      "settings": {
+        "preset": "Свой",
+        "x": -0.02,
+        "y": 0.0,
+        "z": 0.0,
+        "rx": 0.0,
+        "ry": 0.0,
+        "rz": 0.0,
+        "scale": 1.0,
+        "both": true
+      }
+    },
+    "arc_hand_shader": {
+      "enabled": false,
+      "settings": {
+        "shader": "Nebula",
+        "colour": "theme",
+        "speed": 1.0,
+        "opacity": 1.0,
+        "only": false
+      }
+    },
+    "hand_glow": {
+      "enabled": false,
+      "settings": {
+        "strength": 3.0,
+        "colour_mode": "Переливание",
+        "colour": "ff3399ff",
+        "gradient_a": "ff1e78ff",
+        "gradient_b": "ff00c8ff",
+        "fill": true,
+        "fill_alpha": 100.0,
+        "trail": true,
+        "trail_length": 50.0,
+        "trail_rise": 2.5,
+        "trail_wobble": 2.0,
+        "trail_bright": 2.0,
+        "trail_soft": 3.0
+      }
+    },
+    "capes": {
+      "enabled": true,
+      "settings": {
+        "design": "Reveal"
+      }
+    },
+    "wings": {
+      "enabled": true,
+      "settings": {
+        "design": "Fallen",
+        "fit_size": 100.0,
+        "fit_x": 0.0,
+        "fit_y": 0.0,
+        "fit_z": 0.0,
+        "fit_tilt": 0.0,
+        "fit_turn": 0.0
+      }
+    },
+    "backpacks": {
+      "enabled": false,
+      "settings": {
+        "design": "Supreme",
+        "fit_size": 100.0,
+        "fit_x": 0.0,
+        "fit_y": 0.0,
+        "fit_z": 0.0,
+        "fit_tilt": 0.0,
+        "fit_turn": 0.0
+      }
+    },
+    "headwear": {
+      "enabled": true,
+      "settings": {
+        "design": "Fox Hat",
+        "fit_size": 100.0,
+        "fit_x": 0.0,
+        "fit_y": 0.0,
+        "fit_z": 0.0,
+        "fit_tilt": 0.0,
+        "fit_turn": 0.0
+      }
+    },
+    "emotes": {
+      "enabled": false,
+      "settings": {
+        "camera": true,
+        "cancel_on_move": true,
+        "speed": 1.0
+      }
+    },
+    "killsound": {
+      "enabled": true,
+      "settings": {
+        "sound": "Godlike",
+        "volume": 100.0,
+        "players": false
+      }
+    },
+    "hitsound": {
+      "enabled": false,
+      "settings": {
+        "sound": "Coin",
+        "volume": 100.0,
+        "vary": true,
+        "mute": true
+      }
+    },
+    "optimizer": {
+      "enabled": true,
+      "settings": {
+        "profile": "Максимум FPS",
+        "distance": 6.0,
+        "particles": true,
+        "effects": true,
+        "unlock": true
+      }
+    },
+    "hit_range": {
+      "enabled": false,
+      "settings": {
+        "self": true,
+        "others": true
+      }
+    },
+    "slipstream": {
+      "enabled": false,
+      "settings": {
+        "palette": "Градиент",
+        "color": "theme",
+        "amount": 100.0
+      }
+    },
+    "arrow_tags": {
+      "enabled": false,
+      "settings": {
+        "palette": "Градиент",
+        "color": "theme",
+        "range": 20.0,
+        "tipped_only": false
+      }
+    },
+    "ft_items": {
+      "enabled": false,
+      "settings": {
+        "trap.on": true,
+        "trap.zone": "ff859cff",
+        "trap.hit": "ffff4d5e",
+        "trap.players": true,
+        "trap.damage": true,
+        "trap.hearts": true,
+        "trap.timer": true,
+        "trap.death": true,
+        "trap.blast": false,
+        "trap.glow": true,
+        "trap.dragon": false,
+        "plast.on": true,
+        "plast.zone": "ff55ff55",
+        "plast.hit": "ffff4d5e",
+        "plast.players": true,
+        "plast.damage": true,
+        "plast.hearts": true,
+        "plast.timer": true,
+        "plast.death": true,
+        "plast.blast": false,
+        "plast.glow": true,
+        "plast.dragon": false,
+        "disorient.on": true,
+        "disorient.zone": "ffb18cff",
+        "disorient.hit": "ffff4d5e",
+        "disorient.players": true,
+        "disorient.damage": true,
+        "disorient.hearts": true,
+        "disorient.timer": true,
+        "disorient.death": true,
+        "disorient.blast": false,
+        "disorient.glow": true,
+        "disorient.dragon": false,
+        "dust.on": true,
+        "dust.zone": "ffffffff",
+        "dust.hit": "ffff4d5e",
+        "dust.players": true,
+        "dust.damage": true,
+        "dust.hearts": true,
+        "dust.timer": true,
+        "dust.death": true,
+        "dust.blast": false,
+        "dust.glow": true,
+        "dust.dragon": false,
+        "snowball.on": true,
+        "snowball.zone": "ff8fd3ff",
+        "snowball.hit": "ffff4d5e",
+        "snowball.players": true,
+        "snowball.damage": true,
+        "snowball.hearts": true,
+        "snowball.timer": true,
+        "snowball.death": true,
+        "snowball.blast": false,
+        "snowball.glow": true,
+        "snowball.dragon": false,
+        "drill.on": true,
+        "drill.zone": "ffffb13d",
+        "drill.hit": "ffff4d5e",
+        "drill.players": true,
+        "drill.damage": true,
+        "drill.hearts": true,
+        "drill.timer": true,
+        "drill.death": true,
+        "drill.blast": false,
+        "drill.glow": true,
+        "drill.dragon": false
+      }
+    },
+    "ft_events": {
+      "enabled": false,
+      "settings": {
+        "ask": true,
+        "marks": true,
+        "notices": true,
+        "hide": true,
+        "warn": true
+      }
+    },
+    "ft_enchant_search": {
+      "enabled": false,
+      "settings": {
+        "chosen": {},
+        "pick": false,
+        "match": "Любое из них",
+        "everywhere": false,
+        "color": "theme"
+      }
+    },
+    "ft_regions": {
+      "enabled": false,
+      "settings": {
+        "preview": true,
+        "placed": true,
+        "labels": true,
+        "color": "theme"
+      }
+    },
+    "see_invisible": {
+      "enabled": false,
+      "settings": {
+        "color": "ffbe5aff",
+        "opacity": 90.0
+      }
+    },
+    "totem_tracker": {
+      "enabled": true,
+      "settings": {
+        "enchanted": true
+      }
+    },
+    "totem_bar": {
+      "enabled": false,
+      "settings": {}
+    },
+    "hit_color": {
+      "enabled": false,
+      "settings": {
+        "mode": "Полностью",
+        "color": "theme"
+      }
+    },
+    "hit_bubble": {
+      "enabled": false,
+      "settings": {
+        "life": 40.0,
+        "texture": "Пузырь 1",
+        "color": "theme"
+      }
+    },
+    "body_glow": {
+      "enabled": false,
+      "settings": {
+        "size": 2.3,
+        "opacity": 100.0,
+        "color": "theme"
+      }
+    },
+    "halo": {
+      "enabled": false,
+      "settings": {
+        "radius": 0.45,
+        "height": 0.0,
+        "color": "theme"
+      }
+    },
+    "china_hat": {
+      "enabled": false,
+      "settings": {
+        "width": 0.65,
+        "rise": 0.35,
+        "color": "theme"
+      }
+    },
+    "self_nametag": {
+      "enabled": false,
+      "settings": {}
+    },
+    "world_particles": {
+      "enabled": false,
+      "settings": {
+        "kind": "Огоньки",
+        "rate": 12.0,
+        "range": 8.0,
+        "color": "theme"
+      }
+    },
+    "ui_animations": {
+      "enabled": false,
+      "settings": {
+        "hotbar": true,
+        "hotbar_ms": 100.0,
+        "chat": true,
+        "chat_ms": 200.0,
+        "tab": true,
+        "tab_ms": 200.0,
+        "perspective": true,
+        "perspective_ms": 300.0
+      }
+    },
+    "auto_reconnect": {
+      "enabled": false,
+      "settings": {}
+    },
+    "pickup_log": {
+      "enabled": false,
+      "settings": {
+        "paid_only": false
+      }
+    },
+    "lock_slot": {
+      "enabled": false,
+      "settings": {
+        "whole_bar": false,
+        "charms": false,
+        "slot1": false,
+        "slot2": false,
+        "slot3": false,
+        "slot4": false,
+        "slot5": false,
+        "slot6": false,
+        "slot7": false,
+        "slot8": false,
+        "slot9": false
+      }
+    },
+    "elytra_swap": {
+      "enabled": false,
+      "settings": {
+        "swap_key": -1
+      }
+    },
+    "rw_helper": {
+      "enabled": false,
+      "settings": {
+        "close_menu": true,
+        "filter": true
+      }
+    },
+    "chest_sorter": {
+      "enabled": false,
+      "settings": {}
+    },
+    "sky_shader": {
+      "enabled": true,
+      "settings": {
+        "mode": "Каустика",
+        "color": "ffff008c",
+        "neon_palette": "RGB",
+        "neon_1": "ffff0000",
+        "neon_2": "ff00ff00",
+        "neon_3": "ff0000ff",
+        "speed": 1.0,
+        "size": 5.0,
+        "intensity": 0.01,
+        "opacity": 1.0
+      }
+    },
+    "custom_fog": {
+      "enabled": false,
+      "settings": {
+        "range": true,
+        "end": 128.0,
+        "color": "ff8fb8ff",
+        "submerged": true
+      }
+    },
+    "custom_time": {
+      "enabled": false,
+      "settings": {
+        "time": 6000.0
+      }
+    },
+    "ambience": {
+      "enabled": false,
+      "settings": {
+        "sky": true,
+        "clouds": true,
+        "stars": true,
+        "theme_sync": true,
+        "sky_colour": "ff5078dc",
+        "cloud_colour": "ff5078dc",
+        "star_colour": "ff5078dc",
+        "night": true,
+        "night_sync": true,
+        "night_colour": "ff5078dc",
+        "night_strength": 70.0,
+        "wet": false,
+        "wet_reflection": 70.0,
+        "wet_amount": 60.0,
+        "wet_quality": "Среднее",
+        "rain": false,
+        "rain_density": 100.0,
+        "rain_opacity": 45.0,
+        "rain_drops": 60.0,
+        "rain_splashes": 60.0,
+        "crystals": false,
+        "crystal_shape": "Кристалл",
+        "crystal_colour": "theme"
+      }
+    },
+    "no_render": {
+      "enabled": false,
+      "settings": {
+        "all_particles": true,
+        "explosions": true,
+        "block_particles": true,
+        "potion_particles": true,
+        "hit_particles": false,
+        "water_particles": true,
+        "fire": true,
+        "inside_block": true,
+        "nausea": true,
+        "darkness": true,
+        "vignette": true,
+        "hurt_bob": true,
+        "walk_bob": false,
+        "fog": false,
+        "fluid_fog": false,
+        "weather": true,
+        "shadows": false,
+        "world_border": true,
+        "glowing": false,
+        "xp_bottles": true,
+        "bossbar": false,
+        "scoreboard": false,
+        "effects": false,
+        "air_bubbles": false,
+        "attack_indicator": false,
+        "wither_hearts": true
+      }
+    },
+    "low_fire": {
+      "enabled": true,
+      "settings": {
+        "height": 0.35,
+        "size": 0.8,
+        "opacity": 0.45,
+        "tint": false,
+        "color": "ffffb066"
+      }
+    },
+    "world_lyrics": {
+      "enabled": false,
+      "settings": {
+        "distance": 7.0,
+        "size": 1.0,
+        "scatter": 70.0,
+        "offset": 0.0,
+        "source": "Авто",
+        "yandex_account": false,
+        "spotify_account": false,
+        "paste_account": false,
+        "roadside": true,
+        "glow": true,
+        "glow_strength": 85.0,
+        "shadow": true,
+        "motes": true,
+        "recognize": false,
+        "whisper_model": "Base",
+        "language": "Авто",
+        "text_color": "ffffffff",
+        "accent": "ff9660ff"
+      }
+    },
+    "block_overlay": {
+      "enabled": true,
+      "settings": {
+        "outline": true,
+        "line_width": 2.0,
+        "animation2": "Нет",
+        "glide": true,
+        "glide_speed": 0.35,
+        "client_colour": true,
+        "colour2": "ffffffff",
+        "fill2": true,
+        "fill_type": "Обычная",
+        "fill_alpha": 0.3,
+        "shader": "Nebula",
+        "shader_speed": 1.0,
+        "shader_alpha": 1.0,
+        "shader_client": true,
+        "shader_colour": "ff00ff78"
+      }
+    },
+    "projectile_trails": {
+      "enabled": false,
+      "settings": {
+        "palette": "Градиент",
+        "color": "theme",
+        "life": 1.0,
+        "width": 0.06
+      }
+    },
+    "hitboxes": {
+      "enabled": false,
+      "settings": {
+        "players": true,
+        "mobs": true,
+        "animals": false,
+        "items": false,
+        "range": 48.0,
+        "outline": true,
+        "style": "Полная",
+        "corner": 0.25,
+        "width2": 2.0,
+        "colour_mode": "Тема",
+        "colour_a": "ffc084fc",
+        "gradient": true,
+        "colour_b": "ff22d3ee",
+        "hover": true,
+        "hover_colour": "ffff3b4e",
+        "flash": true,
+        "flash_colour": "ffffffff",
+        "glow": true,
+        "glow_mode": "Обычное",
+        "fill": false,
+        "fill_type": "Прозрачная",
+        "fill_alpha": 22.0
+      }
+    },
+    "nametags": {
+      "enabled": true,
+      "settings": {
+        "palette": "Градиент",
+        "color": "theme",
+        "health": true,
+        "distance": true,
+        "range": 48.0
+      }
+    },
+    "tnt_timer": {
+      "enabled": true,
+      "settings": {
+        "palette": "Градиент",
+        "color": "theme",
+        "range": 48.0
+      }
+    },
+    "consume_esp": {
+      "enabled": false,
+      "settings": {
+        "palette": "Градиент",
+        "color": "theme",
+        "self": true,
+        "item_name": false,
+        "range": 32.0
+      }
+    },
+    "trajectories": {
+      "enabled": false,
+      "settings": {
+        "which": "Всё брошенное",
+        "style": "Reveal",
+        "before": true,
+        "rainbow": false,
+        "mine": true,
+        "others": true,
+        "path_color": "ff3d1466",
+        "fill_color": "theme",
+        "hit_color": "ffff5a6e",
+        "width": 1.5,
+        "glow": 55.0,
+        "gradient": true,
+        "marker": true,
+        "highlight": true,
+        "ghost": true,
+        "label": true,
+        "walls": true
+      }
+    },
+    "holy_items": {
+      "enabled": false,
+      "settings": {
+        "trap.on": true,
+        "trap.zone": "ff859cff",
+        "trap.hit": "ffff4d5e",
+        "trap.players": true,
+        "trap.damage": true,
+        "trap.hearts": true,
+        "trap.timer": true,
+        "trap.death": true,
+        "trap.blast": false,
+        "trap.glow": true,
+        "trap.dragon": false,
+        "blast_trap.on": true,
+        "blast_trap.zone": "ffffa24d",
+        "blast_trap.hit": "ffff4d5e",
+        "blast_trap.players": true,
+        "blast_trap.damage": true,
+        "blast_trap.hearts": true,
+        "blast_trap.timer": true,
+        "blast_trap.death": true,
+        "blast_trap.blast": false,
+        "blast_trap.glow": true,
+        "blast_trap.dragon": false,
+        "stun.on": true,
+        "stun.zone": "ffb18cff",
+        "stun.hit": "ffff4d5e",
+        "stun.players": true,
+        "stun.damage": true,
+        "stun.hearts": true,
+        "stun.timer": true,
+        "stun.death": true,
+        "stun.blast": false,
+        "stun.glow": true,
+        "stun.dragon": false,
+        "thing.on": true,
+        "thing.zone": "ffff7a45",
+        "thing.hit": "ffff4d5e",
+        "thing.players": true,
+        "thing.damage": true,
+        "thing.hearts": true,
+        "thing.timer": true,
+        "thing.death": true,
+        "thing.blast": false,
+        "thing.glow": true,
+        "thing.dragon": false,
+        "tnt.on": true,
+        "tnt.zone": "ffffb13d",
+        "tnt.hit": "ffff4d5e",
+        "tnt.players": true,
+        "tnt.damage": true,
+        "tnt.hearts": true,
+        "tnt.timer": true,
+        "tnt.death": true,
+        "tnt.blast": false,
+        "tnt.glow": true,
+        "tnt.dragon": false,
+        "plain_tnt.on": false,
+        "plain_tnt.zone": "ffff6a3d",
+        "plain_tnt.hit": "ffff4d5e",
+        "plain_tnt.players": true,
+        "plain_tnt.damage": true,
+        "plain_tnt.hearts": true,
+        "plain_tnt.timer": true,
+        "plain_tnt.death": true,
+        "plain_tnt.blast": false,
+        "plain_tnt.glow": true,
+        "plain_tnt.dragon": false
+      }
+    },
+    "waypoints": {
+      "enabled": false,
+      "settings": {
+        "events": true,
+        "arrows": true,
+        "color": "ff6fa8ff",
+        "death": true
+      }
+    },
+    "chat_coords": {
+      "enabled": false,
+      "settings": {
+        "paint": true,
+        "color": "theme",
+        "underline": true,
+        "hint": true,
+        "flat": true
+      }
+    },
+    "holy_events": {
+      "enabled": false,
+      "settings": {
+        "sound": true,
+        "show_common": true,
+        "show_rare": true,
+        "show_epic": true,
+        "show_legendary": true,
+        "show_mythic": true,
+        "show_boss": true
+      }
+    },
+    "enchant_search": {
+      "enabled": false,
+      "settings": {
+        "chosen": {},
+        "pick": false,
+        "match": "Любое из них",
+        "everywhere": false,
+        "color": "theme"
+      }
+    },
+    "drill_helper": {
+      "enabled": false,
+      "settings": {
+        "color": "theme",
+        "fill": true
+      }
+    },
+    "zoom": {
+      "enabled": true,
+      "settings": {
+        "factor": 3.0,
+        "key": "C"
+      }
+    },
+    "aspectratio": {
+      "enabled": false,
+      "settings": {
+        "ratio": "4:3",
+        "custom": 1.33,
+        "hand": true
+      }
+    },
+    "motion_blur": {
+      "enabled": false,
+      "settings": {
+        "strength": 50.0
+      }
+    },
+    "auto_sprint": {
+      "enabled": true,
+      "settings": {
+        "any": false
+      }
+    },
+    "free_look": {
+      "enabled": true,
+      "settings": {
+        "key": "Левый Alt",
+        "mode": "Удерживать",
+        "smooth": 50.0
+      }
+    },
+    "item_scroller": {
+      "enabled": true,
+      "settings": {
+        "wheel": true,
+        "drag": true
+      }
+    },
+    "click_pearl": {
+      "enabled": false,
+      "settings": {
+        "back": true
+      }
+    },
+    "fast_swap": {
+      "enabled": false,
+      "settings": {
+        "swap1": true,
+        "swap1_a": "Тотем",
+        "swap1_b": "Щит",
+        "swap1_hand": "Левая рука",
+        "swap1_key": -1,
+        "swap2": false,
+        "swap2_a": "Меч",
+        "swap2_b": "Булава",
+        "swap2_hand": "Правая рука",
+        "swap2_key": -1,
+        "swap3": false,
+        "swap3_a": "Тотем",
+        "swap3_b": "Золотое яблоко",
+        "swap3_hand": "Левая рука",
+        "swap3_key": -1
+      }
+    },
+    "item_physics": {
+      "enabled": true,
+      "settings": {
+        "spin": 100.0
+      }
+    },
+    "chunk_animator": {
+      "enabled": false,
+      "settings": {
+        "from": "Снизу",
+        "time": 0.6,
+        "depth": 14.0
+      }
+    },
+    "fullbright": {
+      "enabled": true,
+      "settings": {
+        "level": 100.0
+      }
+    },
+    "crystal_look": {
+      "enabled": false,
+      "settings": {
+        "color": "ffb98cff",
+        "tint": true,
+        "size": 100.0,
+        "damage": false
+      }
+    },
+    "shulker_preview": {
+      "enabled": true,
+      "settings": {
+        "tint": true,
+        "compact": false
+      }
+    },
+    "screenshots": {
+      "enabled": false,
+      "settings": {
+        "copy": true,
+        "gallery": false,
+        "gallery_key": -1
+      }
+    },
+    "light_levels": {
+      "enabled": false,
+      "settings": {
+        "radius": 16.0,
+        "night": true
+      }
+    },
+    "borderless": {
+      "enabled": false,
+      "settings": {}
+    },
+    "discord_status": {
+      "enabled": false,
+      "settings": {
+        "server": true
+      }
+    },
+    "web_browser": {
+      "enabled": false,
+      "settings": {
+        "window_key": 90
+      }
+    },
+    "cheat_radar": {
+      "enabled": false,
+      "settings": {
+        "tags": true,
+        "chat": true,
+        "reach": true,
+        "walls": true,
+        "aura": true,
+        "cps": true
+      }
+    },
+    "player_alert": {
+      "enabled": false,
+      "settings": {
+        "left": false,
+        "chat": false,
+        "sound": true
+      }
+    },
+    "elytra_hud": {
+      "enabled": false,
+      "settings": {}
+    },
+    "kill_banner": {
+      "enabled": false,
+      "settings": {
+        "victim": true
+      }
+    },
+    "break_progress": {
+      "enabled": false,
+      "settings": {}
+    },
+    "death_recap": {
+      "enabled": false,
+      "settings": {}
+    },
+    "totem_pops": {
+      "enabled": false,
+      "settings": {}
+    },
+    "lag_alert": {
+      "enabled": false,
+      "settings": {}
+    },
+    "tool_guard": {
+      "enabled": false,
+      "settings": {
+        "limit": 8.0
+      }
+    },
+    "inventory_alert": {
+      "enabled": false,
+      "settings": {
+        "slots": 0.0
+      }
+    },
+    "server_presets": {
+      "enabled": false,
+      "settings": {}
+    },
+    "tooltips": {
+      "enabled": false,
+      "settings": {
+        "frame": true,
+        "durability": true
+      }
+    },
+    "chat_helper": {
+      "enabled": false,
+      "settings": {
+        "layout": true,
+        "antispam": true,
+        "keep": true,
+        "mentions": true,
+        "time": true,
+        "search": true,
+        "sound": true,
+        "words": ""
+      }
+    },
+    "command_safe": {
+      "enabled": false,
+      "settings": {
+        "list": "suicide, kill, clear, ci, clearinventory, pay, delhome, sellall"
+      }
+    },
+    "auction_helper": {
+      "enabled": false,
+      "settings": {
+        "amounts": true,
+        "key": "Нет",
+        "command": "/ah search {item}"
+      }
+    },
+    "command_binds": {
+      "enabled": false,
+      "settings": {
+        "editor": false
+      }
+    },
+    "sound_mixer": {
+      "enabled": false,
+      "settings": {
+        "hits": 100.0,
+        "totem": 100.0,
+        "pearl": 100.0,
+        "blast": 100.0,
+        "steps": 100.0,
+        "eat": 100.0,
+        "bow": 100.0,
+        "xp": 100.0,
+        "chest": 100.0,
+        "armor": 100.0,
+        "weather": 100.0,
+        "mobs": 100.0
+      }
+    },
+    "streamer": {
+      "enabled": false,
+      "settings": {
+        "alias": "Reveal",
+        "nick": true,
+        "coords": true,
+        "server": true
+      }
+    },
+    "kits": {
+      "enabled": false,
+      "settings": {
+        "marks": true,
+        "arrange": true,
+        "save": false,
+        "choose": false,
+        "delete": false
+      }
+    },
+    "fake_player": {
+      "enabled": false,
+      "settings": {
+        "armour": true,
+        "regen": true
+      }
+    },
+    "saturation": {
+      "enabled": false,
+      "settings": {
+        "saturation": true,
+        "preview": true
+      }
+    },
+    "armor_alert": {
+      "enabled": true,
+      "settings": {
+        "threshold": 15.0
+      }
+    },
+    "tab_list": {
+      "enabled": true,
+      "settings": {
+        "ping_ms": true
+      }
+    },
+    "watermark": {
+      "enabled": true,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "show_nick": true,
+        "server2": false,
+        "fps": true,
+        "ping": true,
+        "time": true,
+        "music": true,
+        "binds": true,
+        "totems": true,
+        "alerts": true,
+        "intro": true,
+        "glow": true
+      },
+      "x": 0.008,
+      "y": 0.012
+    },
+    "targethud": {
+      "enabled": true,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "style3": "Панель",
+        "card_armor": "Число",
+        "hurt_tint": true,
+        "bar2": "Тема",
+        "gear2": true,
+        "popups": true
+      },
+      "x": 0.27291666666666664,
+      "y": 0.9021190716448032
+    },
+    "potions": {
+      "enabled": true,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "notice": true
+      },
+      "x": 0.8786458333333333,
+      "y": 0.0
+    },
+    "hotkeys": {
+      "enabled": true,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "only_on": true
+      },
+      "x": 0.771875,
+      "y": 0.006054490413723511
+    },
+    "cooldowns": {
+      "enabled": false,
+      "settings": {
+        "scale": 1.0,
+        "bg": true
+      },
+      "x": 0.22604166666666667,
+      "y": 0.23613123561091193
+    },
+    "armor": {
+      "enabled": true,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "percent": false
+      },
+      "x": 0.6432291666666666,
+      "y": 0.9596367305751766
+    },
+    "coords": {
+      "enabled": false,
+      "settings": {
+        "scale": 0.5,
+        "bg": true,
+        "nether": false,
+        "speed": true
+      },
+      "x": 0.044270833333333336,
+      "y": 0.9808274470232089
+    },
+    "keystrokes": {
+      "enabled": true,
+      "settings": {
+        "scale": 1.0,
+        "bg": true
+      },
+      "x": 0.9338541666666667,
+      "y": 0.8627648839556004
+    },
+    "status": {
+      "enabled": false,
+      "settings": {
+        "scale": 0.5,
+        "bg": true,
+        "seconds": false,
+        "fps": true,
+        "ping": true
+      },
+      "x": 0.011458333333333333,
+      "y": 0.9808274470232089
+    },
+    "compass": {
+      "enabled": false,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "degrees": true,
+        "marks": true
+      },
+      "x": 0.42,
+      "y": 0.072
+    },
+    "holy_events_hud": {
+      "enabled": false,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "lines": 5.0
+      },
+      "x": 0.008,
+      "y": 0.3
+    },
+    "notify": {
+      "enabled": false,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "modules": true,
+        "items": true,
+        "others": true,
+        "effects": true,
+        "sound": true
+      },
+      "x": 0.396,
+      "y": 0.54
+    },
+    "low_hp": {
+      "enabled": false,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "threshold": 6.0,
+        "edges": true,
+        "beat": true,
+        "volume": 60.0
+      },
+      "x": 0.46,
+      "y": 0.6
+    },
+    "inventory_hud": {
+      "enabled": false,
+      "settings": {
+        "scale": 1.0,
+        "bg": true,
+        "hotbar": false,
+        "hide_empty": false
+      },
+      "x": 0.8609375,
+      "y": 0.8702937945037119
+    },
+    "boss_bars": {
+      "enabled": false,
+      "settings": {
+        "scale": 1.0,
+        "bg": false
+      },
+      "x": 0.3463541666666667,
+      "y": 0.2362778630275914
+    }
+  },
+  "menu": {
+    "settings": {
+      "language": "Русский",
+      "sounds": true,
+      "wide": false,
+      "wallpaper": 1.0,
+      "panel_w": 1441.0,
+      "panel_h": 914.0,
+      "volume": 70.0,
+      "hover_sounds": true,
+      "slider_sounds": true,
+      "blur": true,
+      "dim": 40.0,
+      "spotlight": true,
+      "ripples": true,
+      "tips": true,
+      "notify": true,
+      "preset_autosave": false,
+      "animations": true,
+      "anim_speed": 1.0,
+      "scale": 100.0,
+      "drag": true,
+      "remember": true,
+      "front_anim": true,
+      "front_parallax": true,
+      "front_snow": true,
+      "custom_wallpaper": false,
+      "pick_wallpaper": false
+    },
+    "x": 0.0078125,
+    "y": 0.015136226034308779,
+    "compact": false,
+    "colourPresets": [
+      "ffff008c",
+      "ff000000",
+      "ff007aff",
+      "ff34c759",
+      "ffffcc00",
+      "ffff3b30",
+      "ff9747ff"
+    ]
+  },
+  "about": {
+    "server": "",
+    "saved": 1795464625589
+  }
+}

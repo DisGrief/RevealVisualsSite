@@ -1240,10 +1240,132 @@ html[data-theme="light"] .hero__title-outline {
   justify-content: center;
 }
 
+.config-card--wide {
+  grid-column: 1 / -1;
+}
+
+.config-card__intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.config-card__introText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  max-width: 640px;
+}
+
+.config-card__intro .config-card__desc {
+  flex: 0 1 auto;
+}
+
+.config-card__intro .config-card__actions {
+  flex: 0 0 auto;
+  padding-top: 0;
+}
+
+.config-card__intro .config-card__actions .btn {
+  flex: 0 0 auto;
+}
+
+.config-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 4px;
+  min-width: 0;
+}
+
+.shot {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+}
+
+.shot--strip {
+  grid-column: 1 / -1;
+}
+
+.shot__media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1.98 / 1;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: #07080c;
+  cursor: zoom-in;
+  transition: border-color 0.25s ease;
+}
+
+.shot__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s var(--ease), filter 0.3s ease;
+}
+
+.shot__media:hover {
+  border-color: color-mix(in srgb, var(--text) 26%, transparent);
+}
+
+.shot__media:hover img {
+  transform: scale(1.025);
+  filter: brightness(1.06);
+}
+
+.shot--strip .shot__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: auto;
+  min-height: clamp(68px, 8vw, 118px);
+  padding: clamp(10px, 1.6vw, 18px) clamp(12px, 2vw, 24px);
+  background: radial-gradient(120% 200% at 50% 50%, #2b0a23, #0b060d 72%);
+}
+
+.shot--strip .shot__media img {
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.shot figcaption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.shot__num {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--text) 4%, transparent);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+}
+
 .configs__hint {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 9px;
   margin-top: 18px;
   color: var(--dim);
@@ -1259,11 +1381,106 @@ html[data-theme="light"] .hero__title-outline {
 
 .configs__hint code {
   color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 720px) {
+  .config-gallery { grid-template-columns: 1fr; }
+  .config-card__intro .config-card__actions { width: 100%; }
+  .config-card__intro .config-card__actions .btn { flex: 1 1 auto; }
+
+  .shot--strip .shot__media {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+
+  .shot--strip .shot__media::-webkit-scrollbar { display: none; }
+
+  .shot--strip .shot__media img {
+    flex: 0 0 auto;
+    width: 466px;
+    max-width: none;
+  }
 }
 
 @media (max-width: 560px) {
   .configs { grid-template-columns: 1fr; }
   .configs__hint { align-items: flex-start; text-align: left; }
+}
+
+/* ---------- lightbox ---------- */
+
+.lightbox {
+  max-width: min(1240px, 94vw);
+  max-height: 92vh;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  overflow: visible;
+}
+
+.lightbox::backdrop {
+  background: rgba(4, 5, 9, 0.86);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.lightbox img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 78vh;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 720px) {
+  .lightbox img { min-width: min(92vw, 640px); }
+}
+
+.lightbox__caption {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(14, 16, 24, 0.9);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.lightbox__close:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.lightbox__close svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+}
+
+@media (max-width: 560px) {
+  .lightbox__close { top: -12px; right: -8px; }
+  .lightbox__caption { margin-top: 10px; font-size: 12px; }
 }
 
 /* ---------- launcher / install ---------- */
