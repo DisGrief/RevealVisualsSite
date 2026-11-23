@@ -57,6 +57,34 @@ window.REVEAL_RELEASE = {
 
 Детали: репозиторий должен быть публичным; версия из кеша рисуется сразу, а сам GitHub опрашивается не чаще раза в 5 минут (кеш в `localStorage`, ключ `reveal_release`) — это бережёт лимит 60 запросов в час на IP. Если API недоступен или поля не заполнены — показываются `fallbackVersion` и `fallbackSize`.
 
+## Свой домен
+
+Сайт живёт на GitHub Pages, поэтому поддомен указывает на `disgrief.github.io`.
+
+1. В DNS-панели домена `griefworlds.ru` (сейчас это Vercel → Domains → `griefworlds.ru` → DNS Records) добавьте запись:
+
+```
+Тип:   CNAME
+Имя:   revealvisuals
+Значение: disgrief.github.io
+TTL:   300 / Auto
+```
+
+2. После того как запись разойдётся, включите домен в Pages:
+
+```bash
+gh api -X PUT repos/DisGrief/RevealVisualsSite/pages \
+  -f cname=revealvisuals.griefworlds.ru -f build_type=legacy
+```
+
+3. Дождитесь статуса `certificate approved` и включите принудительный HTTPS:
+
+```bash
+gh api -X PUT repos/DisGrief/RevealVisualsSite/pages -F https_enforced=true
+```
+
+Файл `CNAME` в корне репозитория делает то же самое — GitHub читает его при сборке.
+
 ## Деплой
 
 Это статика: загрузите `index.html` и папку `assets` на GitHub Pages, Netlify, Vercel или любой веб-сервер. `server.mjs` для продакшена не нужен.
